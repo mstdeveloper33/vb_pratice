@@ -23,6 +23,7 @@ class ReqresService extends IReqresService{
       final jsonBody = response.data;
       if(jsonBody is Map<String,dynamic>) {
         return ResourceModel.fromJson(jsonBody);
+        
       }
     }
     return null;
